@@ -109,7 +109,6 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* SVG Color and Size styling */
         .social-btn svg {
             width: 20px;
             height: 20px;
@@ -135,7 +134,8 @@
 
     <div class="card">
         <div class="profile-img-container">
-            <img src="profile.png" alt="Muhammad Abdullah" class="profile-img" onerror="this.src='profile.jpg'; this.onerror=function(){this.src='https://via.placeholder.com/150';};">
+            <!-- Image name updated to 1782746269641.jpg -->
+            <img src="1782746269641.jpg" alt="Muhammad Abdullah" class="profile-img">
         </div>
 
         <h1 id="greeting-name">Muhammad Abdullah</h1>
@@ -147,7 +147,6 @@
         </p>
 
         <div class="social-links">
-            <!-- Facebook Profile Link with SVG Icon -->
             <a href="https://www.facebook.com/abdullah.ad.266718" target="_blank" class="social-btn" title="Facebook">
                 <svg viewBox="0 0 24 24">
                     <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/>
@@ -164,7 +163,6 @@
     </div>
 
     <script>
-        // 1. Dynamic Greeting
         const hours = new Date().getHours();
         const greetingName = document.getElementById('greeting-name');
         
@@ -176,7 +174,6 @@
             greetingName.innerHTML = "Good Evening! <br><span style='font-size: 22px; font-weight:400; color:#cbd5e1;'>I'm M. Abdullah</span>";
         }
 
-        // 2. Typing Effect
         const textElement = document.getElementById('dynamic-text');
         const phrase = "Welcome to my personal space.";
         let index = 0;
