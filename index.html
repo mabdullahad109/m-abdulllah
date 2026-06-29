@@ -105,9 +105,15 @@
             background: #1e293b;
             color: #cbd5e1;
             text-decoration: none;
-            font-size: 18px;
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* SVG Color and Size styling */
+        .social-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
         }
 
         .social-btn:hover {
@@ -141,7 +147,12 @@
         </p>
 
         <div class="social-links">
-            <a href="#" class="social-btn" title="Facebook">FB</a>
+            <!-- Facebook Profile Link with SVG Icon -->
+            <a href="https://www.facebook.com/abdullah.ad.266718" target="_blank" class="social-btn" title="Facebook">
+                <svg viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/>
+                </svg>
+            </a>
             <a href="#" class="social-btn" title="Instagram">IG</a>
             <a href="#" class="social-btn" title="LinkedIn">LN</a>
             <a href="mailto:info@m-abdullah.online" class="social-btn" title="Email">✉</a>
